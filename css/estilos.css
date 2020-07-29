@@ -1,0 +1,375 @@
+.homePage
+{
+background-image: url('../img/caba.jpeg');
+background-repeat: no-repeat;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+}
+
+.cabaniaPage{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.contactPage{
+  background-color: #2ecc71;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.llegarPage{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.tarifaPage{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-wrap {
+    flex: 1;
+  }
+
+/* Add a black background color to the top navigation */
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.navbar a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: sans-serif, Arial;
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+  background-color: #a393be;
+  color: black;
+  text-decoration: none;
+}
+
+/* Add a color to the active/current link */
+.navbar a.active {
+  background-color: #7f69a5;
+  color: white;
+}
+
+.nav-reserva{
+  animation: flash; 
+  animation-duration: 3s; 
+  animation-iteration-count: infinite;
+  --animate-repeat: 2;
+}
+
+.containerTexto{
+  text-align: center;
+  background-color: yellow;
+  margin-top: 20%;
+  width: 70%;
+}
+
+.containerTexto h1{ 
+  font-family: 'Bangers', cursive;
+  padding: 1%;
+}
+
+.pie-pagina {
+  background: #333;
+  flex-shrink: 0;
+  display:flex;
+  justify-content: space-between;
+  padding-top: 1em;
+}
+
+.pie-pagina h3 {
+  color: white;
+  text-align: left;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+.pie-pagina h4{
+   color:white;
+   margin-left: 10px;
+   font-family: 'Open Sans Condensed', sans-serif;
+   font-size: 15px;
+}
+
+.social-media{
+  justify-content:right;
+  text-align:right;
+  list-style-type:none;
+  margin-right: 20px;
+}
+
+.pie-subtexto{
+  display: inline-flex;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+.pie-subtexto li{
+  color:white;
+  padding-right: 20px;
+  list-style-type: none;
+  font-size: 15px;
+
+}
+
+.instagram{
+  list-style-type:none;
+  display: inline-block;
+  margin-right: 30px;
+  padding-top:30px;
+}
+
+.facebook{
+  list-style-type:none;
+  display:inline-block;
+  margin-right: 30px;
+}
+
+.fa-instagram {
+  color:white;
+}
+
+.fa-facebook {
+  color:white;
+}
+
+
+.form-titulo {
+  margin-left: auto;
+  margin-top: 50px;
+  text-align: center;
+  font-weight: 100;
+  font-size: 2.8em;
+  color: white;
+}
+
+.formulario {
+  width: 500px;
+  margin: auto;
+}
+
+label{
+  font-size: 1.5em;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+}
+
+.formStyle { 
+  background-color: #2ecc71;
+  padding: 20px; 
+  width: 400px; 
+  margin-bottom: 20px; 
+  border-bottom-width: 1px; 
+  border-bottom-style: solid; 
+  border-bottom-color: #ecf0f1; 
+  border-top-style: none; 
+  border-right-style: none; 
+  border-left-style: none; 
+  font-size: 1em;
+  font-weight: 100;
+  color: #ffffff;
+}
+
+.formButton {
+	background-color:#ffffff;
+	display:inline-block;
+	color:#2ecc71;
+	font-size:28px;
+	font-weight: 500;
+	padding:6px 24px;
+  margin-top: 15px;
+  margin-right: 60px;
+  margin-bottom: 30px;
+	text-decoration:none;
+}
+
+.formButton:hover {
+	background-color: #27ae60;
+  color:#ffffff;
+}
+
+.formButton:active {
+	position:relative;
+	top:3px;
+}
+
+input:focus {
+  outline: none;
+}
+
+::-webkit-input-placeholder {
+   color: #ecf0f1;
+}
+
+:-moz-placeholder { 
+   color: #ecf0f1;  
+}
+
+::-moz-placeholder { 
+   color: #ecf0f1;  
+}
+
+:-ms-input-placeholder {  
+   color: #ecf0f1;  
+}
+
+.titulo{
+font-family: 'Bebas Neue', cursive;
+font-size: 38px;
+text-align: center;
+}
+
+.asideCabania{
+  justify-content: center;
+  flex-direction: column;
+  background-color: #267964;
+  font-family: 'Roboto';
+  color: white;
+  width: 30%;
+  margin-bottom:5%;
+}
+
+.asideCabania h1{
+  text-align: center;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 25px;
+  display:inline-block;
+}
+
+.asideCabania ul li {
+  font-family: 'Lato', sans-serif;
+  display: inline-block;
+}
+
+h5{
+  font-size: 20px;
+  
+}
+
+.tituloGaleria{
+  text-align: center;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.galleryGrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  grid-template-areas: 
+  "imga imgb imgc"
+  "imgd imge imgf";
+}
+
+.imga {
+  grid-area: imga;
+}
+
+
+.imgb{
+  grid-area: imgb;
+}
+
+
+.imgc{
+  grid-area: imgc;
+}
+
+
+.imgd{
+  grid-area:imgd;
+}
+
+
+.imge{
+  grid-area:imge;
+}
+
+
+.imgf{
+  grid-area:imgf;
+}
+
+
+.galleryImg{
+  width: 100%;
+  height: 100%;
+  object-fit: cover
+}
+
+.howToGrid {
+
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-gap:10px;
+  grid-template-areas: 
+  "aside	mapa"
+
+}
+
+.aside {
+  grid-area: aside;
+  background-image: url('/img/pines.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display:flex;
+  flex-flow: column wrap;
+  text-align: center;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.mapa {
+  grid-area: mapa;
+}
+
+.mapouter {
+  position:relative;
+  text-align:right;
+  height:717px;
+  width:717px;
+}
+
+.gmap_canvas{
+  overflow:hidden;
+  background:none;
+  height:717px;
+  width:717px;
+}
+
+.aside h1{
+  font-family: 'Montserrat Subrayada', sans-serif;
+  color: black;
+  font-size: 22px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.aside p{
+  font-family: 'Roboto';
+}
+
+.descripcion ul {
+    text-align: left;
+    list-style-type: none;
+    margin-top:50px;
+}
+
+
