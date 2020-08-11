@@ -14,7 +14,7 @@ flex-direction: column;
 }
 
 .contactPage{
-  background-color: #2ecc71;
+  background-color: #F4A460;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -38,6 +38,7 @@ flex-direction: column;
 
 /* Add a black background color to the top navigation */
 .navbar {
+  display:block !important;
   background-color: #333;
   overflow: hidden;
 }
@@ -172,7 +173,7 @@ label{
 }
 
 .formStyle { 
-  background-color: #2ecc71;
+  background-color: #F4A460;
   padding: 20px; 
   width: 400px; 
   margin-bottom: 20px; 
@@ -190,18 +191,18 @@ label{
 .formButton {
 	background-color:#ffffff;
 	display:inline-block;
-	color:#2ecc71;
+	color: #F4A460;
 	font-size:28px;
 	font-weight: 500;
 	padding:6px 24px;
   margin-top: 15px;
   margin-right: 60px;
-  margin-bottom: 30px;
-	text-decoration:none;
+  margin-bottom: 50px;
+  text-decoration:none;
 }
 
 .formButton:hover {
-	background-color: #27ae60;
+	background-color: #D2691E;
   color:#ffffff;
 }
 
@@ -272,6 +273,7 @@ h5{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  grid-gap: 5px;
 
   grid-template-areas: 
   "imga imgb imgc"
@@ -326,18 +328,16 @@ h5{
 
 .aside {
   grid-area: aside;
-  background-image: url('/img/pines.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: white;
   display:flex;
   flex-flow: column wrap;
   text-align: center;
-  padding-left: 2%;
-  padding-right: 2%;
+  margin:20px;
 }
 
 .mapa {
   grid-area: mapa;
+  margin:20px;
 }
 
 .mapouter {
@@ -354,22 +354,84 @@ h5{
   width:717px;
 }
 
-.aside h1{
-  font-family: 'Montserrat Subrayada', sans-serif;
-  color: black;
-  font-size: 22px;
-  text-align: center;
-  padding-bottom: 20px;
+
+.card {
+  border: 1px solid #303030; 
 }
 
-.aside p{
-  font-family: 'Roboto';
+.lugares-interes{
+  list-style-type:none;
+  align-self: center;
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 5px;
+
+  
 }
 
-.descripcion ul {
-    text-align: left;
-    list-style-type: none;
-    margin-top:50px;
+.lugares-interes li{
+  font-size: 15px;
+
+}
+
+.shadow {
+  /* JUST FOR STYLING */
+  margin-left: 5rem;
+  margin-top: 5rem;
+  /* JUST FOR STYLING */
+  background: linear-gradient(0deg, #000, #262626);
+}
+
+.shadow:before,
+.shadow:after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  animation: animate 20s linear infinite;
+}
+
+.shadow:after {
+  filter: blur(10px);
+}
+
+@keyframes animate {
+  0% {
+      background-position: 0 0;
+  }
+  50% {
+      background-position: 300% 0;
+  }
+  100% {
+      background-position: 0 0;
+  }
+}
+
+.card-title{
+  font-size: 20px;;
+}
+
+.card-text{
+  padding-bottom: 10px;
+}
+
+.card-title-u{
+  padding:10px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 15px;
+}
+
+.card-text-u{
+  font-size: 50px;
+  font-family: 'Amatic SC', cursive;
 }
 
 
+.gif{
+  float: right;
+}
