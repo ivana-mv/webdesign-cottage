@@ -20,6 +20,6 @@
   "homepage": "https://github.com/ivana-mv/webdesign-cottage#readme",
   "dependencies": {
     "node-sass": "^4.14.1",
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.22"
   }
 }
